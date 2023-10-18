@@ -6,10 +6,11 @@
 }
 
 .container {
-    margin: 10px;
+    margin: 10px auto;
     padding: 8px;
     display: flex;
     flex-direction: column;
+    width: 800px;
 }
 
 .container h1 {
@@ -24,6 +25,21 @@
     font-size: 2.25em;
     font-weight: 600;
     text-decoration: underline;
+}
+
+#bookForm {
+    margin: 20px;
+}
+
+#bookForm, #bookForm input {
+    font-size: 1.1em;
+    width: 300px;
+    margin: 10px 0;
+}
+
+#bookForm select {
+    width: 100%;
+    font-size: 1.1em;
 }
 
 table {border-collapse: collapse;}
@@ -50,5 +66,16 @@ td {
     width: 100px;
     font-size: 1.25em;
     border: 1px solid black;
+    border-radius: 5px;
+}
+
+.removeBtn {
+    margin: 7px auto;
+    display: block;
+    width: 100px;
+    font-size: 1em;
+    background-color: #d0393e;
+    color: white;
+    border: none;
     border-radius: 5px;
 }
