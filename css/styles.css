@@ -10,7 +10,7 @@
     padding: 8px;
     display: flex;
     flex-direction: column;
-    width: 800px;
+    width: 1200px;
 }
 
 .container h1 {
@@ -78,4 +78,9 @@ td {
     color: white;
     border: none;
     border-radius: 5px;
+}
+
+.stars {
+    margin: 0 auto;
+    text-align: center;
 }

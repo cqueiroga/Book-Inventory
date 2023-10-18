@@ -7,6 +7,7 @@ function addRow() {
     let author = document.createElement("td");
     let genre = document.createElement("td");
     let rating = document.createElement("td");
+    rating.setAttribute("class", "stars");
     let removeTd = document.createElement("td");
     let removeBtn = document.createElement("button");
     removeBtn.innerHTML = "Remove";
@@ -17,7 +18,7 @@ function addRow() {
     let inputGenre = document.getElementById("genre");
     let inputRating = document.getElementById("rating");
     
-    getStarRating(inputRating);
+    getStarRating(rating, inputRating);
 
     /*
         Checks if input values are blank
@@ -47,9 +48,10 @@ function addRow() {
         inputTitle.value = "";
         inputAuthor.value = "";
         inputGenre.value = "";
+        inputRating.value = "1";
 
         // Call saveData to save row to local storage
-        //saveData();
+        saveData();
     }
 }
 
@@ -57,16 +59,17 @@ function addRow() {
 table.addEventListener("click", function(e) {
     if (e.target.classList.contains("removeBtn")) {
         e.target.parentElement.parentElement.remove();
-        //saveData(); // call saveData when item is removed
+        saveData(); // call saveData when item is removed
     }
 }, false);
 
-function getStarRating(inputRating) {
-    let img = document.createElement("img");
-    if (inputRating.value == "one") {
+function getStarRating(rating, inputRating) {
+    let inputRatingNum = parseInt(inputRating.value);
+    
+    for (i=1; i<=inputRatingNum; i++) {
+        let img = document.createElement("img");
         img.src = "images/star.png"
-        inputRating.appendChild(img);
-        return inputRating;
+        rating.appendChild(img);
     }
 }
 
@@ -82,4 +85,4 @@ function showTask() {
 }
 
 // Call function to show items in local storage
-//showTask()
+showTask()
