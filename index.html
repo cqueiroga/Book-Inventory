@@ -5,10 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 <div class="container">
-    
+    <h1>Book Log</h1>
+
+    <button id="addBookBtn" onclick="addRow()">Add Book</button>
+    <table id="bookTable">
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Genre</th>
+            <th>Rating</th>
+        </tr>
+        <tr class="bookItem">
+            <td>Book title</td>
+            <td>Book Author</td>
+            <td>Book Genre</td>
+            <td>Book Rating</td>
+        </tr>
+    </table>
 </div>
 <script src="scripts/scripts.js"></script>
 </body>
