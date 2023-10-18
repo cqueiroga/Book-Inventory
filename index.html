@@ -10,24 +10,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+<div id="backgroundImage">
 <div class="container">
     <h1>Book Log</h1>
     
     <div id="bookForm">
-        <label for="title">Book Title</label>
-        <input type="text" id="title" name="title"><br>
-        <label for="author">Book Author</label>
-        <input type="text" id="author" name="author"><br>
-        <label for="genre">Book Genre</label>
-        <input type="text" id="genre" name="genre"><br>
-        <label for="rating">Book Rating (1-5 Stars)</label>
-        <select name="rating" id="rating">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-        </select>
+        <div id="bookFormLeft">
+            <label for="title">Book Title</label>
+            <input type="text" id="title" name="title"><br>
+            <label for="author">Book Author</label>
+            <input type="text" id="author" name="author"><br>
+        </div>
+        <div id="bookFormRight">
+            <label for="genre">Book Genre</label>
+            <input type="text" id="genre" name="genre"><br>
+            <label for="rating">Book Rating (1-5 Stars)</label>
+            <select name="rating" id="rating">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
     </div>
 
     <button id="addBookBtn" onclick="addRow()">Add Book</button>
@@ -49,6 +54,7 @@
         </tr> -->
         </tbody>
     </table>
+</div>
 </div>
 <script src="scripts/scripts.js"></script>
 </body>

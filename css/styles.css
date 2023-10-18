@@ -5,8 +5,20 @@
     box-sizing: border-box;
 }
 
+body, html {
+    height: 100%;
+}
+
+#backgroundImage {
+    background: rgb(255,205,178);
+    background: linear-gradient(180deg, rgba(255,205,178,1) 0%, rgba(255,180,162,1) 25%, rgba(229,152,155,1) 50%, rgba(181,131,141,1) 75%, rgba(109,104,117,1) 100%);
+    height: 100%;
+    opacity: 0.8;
+}
+
 .container {
-    margin: 10px auto;
+    margin: 0 auto;
+    margin-bottom: 10px;
     padding: 8px;
     display: flex;
     flex-direction: column;
@@ -19,6 +31,7 @@
     margin: 0 0 20px;
     font-size: 4em;
     font-weight: 700;
+    color: #1F363D;
 }
 
 .container h3 {
@@ -29,11 +42,23 @@
 
 #bookForm {
     margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5em;
 }
 
-#bookForm, #bookForm input {
+#bookFormLeft, #bookFormRight {
+    width: 325px;
+}
+
+#bookForm label {
+    font-size: 1.5em;
+}
+
+#bookForm input, select {
     font-size: 1.1em;
-    width: 300px;
+    width: 325px;
     margin: 10px 0;
 }
 
@@ -47,26 +72,42 @@ table {border-collapse: collapse;}
 th, td {
     border: 1px solid black;
     width: 175px;
+    border-radius: 10px;
 }
 
 th {
     padding: 10px;
     font-size: 2em;
+    background-color: #40798C;
+    border: none;
+    color: white;
 }
 
 td {
     padding: 5px;
     font-size: 1.5em;
+    border: none;
+    color: white;
+}
+
+tr:nth-child(odd) {
+    background-color: rgba(112, 169, 161, .6);
+}
+
+tr:nth-child(even) {
+    background-color: rgba(158, 193, 163, .8);
 }
 
 #addBookBtn {
     align-self: flex-end;
     margin: 10px 0;
     padding: 8px;
-    width: 100px;
-    font-size: 1.25em;
-    border: 1px solid black;
+    width: 110px;
+    font-size: 1.7em;
+    border: none;
     border-radius: 5px;
+    background-color: #70A9A1;
+    color: white;
 }
 
 .removeBtn {
