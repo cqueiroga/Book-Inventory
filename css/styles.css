@@ -10,15 +10,6 @@ html {
 	height: 100%;
 }
 
-/* .container {
-	margin: 0 auto;
-	margin-bottom: 10px;
-	padding: 8px;
-	display: flex;
-	flex-direction: column;
-	width: 1200px;
-} */
-
 .container h1 {
 	margin: 0 auto;
 	text-align: center;
@@ -43,30 +34,6 @@ html {
 	width: 100%;
 	margin: 10px 0;
 }
-
-/* table {
-	border-collapse: collapse;
-} */
-
-/* th,
-td {
-	border: 1px solid black;
-	width: 175px;
-	border-radius: 10px;
-}
-
-th {
-	padding: 10px;
-	font-size: 2em;
-	border: none;
-}
-
-td {
-	padding: 5px;
-	font-size: 1.5em;
-	border: none;
-	color: white;
-} */
 
 #bookTable td {
 	font-size: 1.5em;
