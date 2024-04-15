@@ -5,4 +5,4 @@ Book Log App
   - All data is stored in browser local storage. If you close your browser, the data will be retained unless you're using incognito/private window.
   - App was created using HTML, CSS and JavaScript
 
-<img src="https://github.com/cqueiroga/Book-Inventory/assets/6300348/dec4340a-4d4e-45d1-9476-b9dd17be00d3" width="550" />
+<img src="https://github.com/cqueiroga/Book-Inventory/assets/6300348/90848e83-ec97-469e-aee8-87d17bdc069d" width="550" />
