@@ -1,127 +1,122 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Caveat', cursive;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Caveat", cursive;
+	box-sizing: border-box;
 }
 
-body, html {
-    height: 100%;
+body,
+html {
+	height: 100%;
 }
 
-#backgroundImage {
-    background: rgb(255,205,178);
-    background: linear-gradient(180deg, rgba(255,205,178,1) 0%, rgba(255,180,162,1) 25%, rgba(229,152,155,1) 50%, rgba(181,131,141,1) 75%, rgba(109,104,117,1) 100%);
-    height: 100%;
-    opacity: 0.8;
-}
-
-.container {
-    margin: 0 auto;
-    margin-bottom: 10px;
-    padding: 8px;
-    display: flex;
-    flex-direction: column;
-    width: 1200px;
-}
+/* .container {
+	margin: 0 auto;
+	margin-bottom: 10px;
+	padding: 8px;
+	display: flex;
+	flex-direction: column;
+	width: 1200px;
+} */
 
 .container h1 {
-    margin: 0 auto;
-    text-align: center;
-    margin: 0 0 20px;
-    font-size: 4em;
-    font-weight: 700;
-    color: #1F363D;
+	margin: 0 auto;
+	text-align: center;
+	margin: 0 0 20px;
+	font-size: 4em;
+	font-weight: 700;
 }
 
 .container h3 {
-    font-size: 2.25em;
-    font-weight: 600;
-    text-decoration: underline;
-}
-
-#bookForm {
-    margin: 20px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 1.5em;
-}
-
-#bookFormLeft, #bookFormRight {
-    width: 325px;
+	font-size: 2.25em;
+	font-weight: 600;
+	text-decoration: underline;
 }
 
 #bookForm label {
-    font-size: 1.5em;
+	font-size: 1.5em;
 }
 
-#bookForm input, select {
-    font-size: 1.1em;
-    width: 325px;
-    margin: 10px 0;
-}
-
+#bookForm input,
 #bookForm select {
-    width: 100%;
-    font-size: 1.1em;
+	font-size: 1.5em;
+	width: 100%;
+	margin: 10px 0;
 }
 
-table {border-collapse: collapse;}
+/* table {
+	border-collapse: collapse;
+} */
 
-th, td {
-    border: 1px solid black;
-    width: 175px;
-    border-radius: 10px;
+/* th,
+td {
+	border: 1px solid black;
+	width: 175px;
+	border-radius: 10px;
 }
 
 th {
-    padding: 10px;
-    font-size: 2em;
-    background-color: #40798C;
-    border: none;
-    color: white;
+	padding: 10px;
+	font-size: 2em;
+	border: none;
 }
 
 td {
-    padding: 5px;
-    font-size: 1.5em;
-    border: none;
-    color: white;
+	padding: 5px;
+	font-size: 1.5em;
+	border: none;
+	color: white;
+} */
+
+#bookTable td {
+	font-size: 1.5em;
 }
 
-tr:nth-child(odd) {
-    background-color: rgba(112, 169, 161, .6);
+#bookTable tr th:nth-child(4) {
+	width: 266px;
+	text-align: center;
 }
 
-tr:nth-child(even) {
-    background-color: rgba(158, 193, 163, .8);
+#bookTable tr th:last-child {
+	width: 200px;
+}
+
+th {
+	font-size: 2em;
 }
 
 #addBookBtn {
-    align-self: flex-end;
-    margin: 10px 0;
-    padding: 8px;
-    width: 110px;
-    font-size: 1.7em;
-    border: none;
-    border-radius: 5px;
-    background-color: #70A9A1;
-    color: white;
+	margin: 12px 12px 12px 0px;
+	padding: 8px;
+	width: 110px;
+	font-size: 1.7em;
+	border: none;
+	border-radius: 5px;
 }
 
 .removeBtn {
-    margin: 7px auto;
-    display: block;
-    width: 100px;
-    font-size: 1em;
-    background-color: #d0393e;
-    color: white;
-    border: none;
-    border-radius: 5px;
+	margin: 7px auto;
+	display: block;
+	width: 100px;
+	font-size: 1em;
+	background-color: #d0393e;
+	color: white;
+	border: none;
+	border-radius: 5px;
 }
 
 .stars {
-    margin: 0 auto;
-    text-align: center;
+	margin: 0 auto;
+	text-align: center;
+}
+
+@media (max-width: 992px) {
+	.container {
+		margin-left: 0px;
+		margin-right: 0px;
+		max-width: 100%;
+	}
+	#bookTable {
+		max-width: 100%;
+	}
 }
